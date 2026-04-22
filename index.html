@@ -1,11 +1,381 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <title>Gong Xiaoxue Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>龚晓雪 | 细胞生物学研发 / 体外研究</title>
+  <meta name="description" content="龚晓雪个人简历网站，聚焦细胞生物学研发、体外研究、肺纤维化、细胞功能评价、机制研究与临床前研究。" />
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --accent:#2563eb;
+      --accent-light:#dbeafe;
+      --max:1000px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+      "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .container{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:24px;
+    }
+
+    .hero{
+      background:linear-gradient(135deg, #eff6ff 0%, #ffffff 55%, #f8fafc 100%);
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:40px 32px;
+      box-shadow:0 10px 30px rgba(15,23,42,.05);
+      margin-top:24px;
+    }
+
+    .name{
+      font-size:42px;
+      font-weight:800;
+      margin:0 0 8px;
+      letter-spacing:.5px;
+    }
+
+    .title{
+      font-size:18px;
+      color:var(--muted);
+      margin:0 0 20px;
+    }
+
+    .contact{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:999px;
+      font-size:14px;
+      color:#374151;
+    }
+
+    .summary{
+      margin-top:22px;
+      font-size:16px;
+      color:#374151;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:24px;
+      margin-top:24px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:26px 22px;
+      box-shadow:0 8px 24px rgba(15,23,42,.04);
+      margin-bottom:24px;
+    }
+
+    .section-title{
+      margin:0 0 18px;
+      font-size:22px;
+      font-weight:800;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .section-title::before{
+      content:"";
+      width:10px;
+      height:10px;
+      border-radius:999px;
+      background:var(--accent);
+      display:inline-block;
+    }
+
+    .item{
+      margin-bottom:20px;
+      padding-bottom:18px;
+      border-bottom:1px dashed var(--line);
+    }
+
+    .item:last-child{
+      margin-bottom:0;
+      padding-bottom:0;
+      border-bottom:none;
+    }
+
+    .item-head{
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      align-items:flex-start;
+      flex-wrap:wrap;
+      margin-bottom:6px;
+    }
+
+    .item-title{
+      font-weight:700;
+      font-size:17px;
+    }
+
+    .item-time{
+      font-size:14px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+
+    .item-sub{
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:10px;
+    }
+
+    ul{
+      margin:8px 0 0 20px;
+      padding:0;
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    .tag-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .tag{
+      padding:8px 12px;
+      border-radius:999px;
+      background:var(--accent-light);
+      color:#1d4ed8;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .paper{
+      font-size:14px;
+      margin-bottom:12px;
+      color:#374151;
+    }
+
+    .small{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+      padding:12px 0 28px;
+    }
+
+    @media (max-width: 860px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+      .name{
+        font-size:34px;
+      }
+      .hero{
+        padding:28px 22px;
+      }
+      .card{
+        padding:22px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Gong Xiaoxue</h1>
-  <p>My resume website is coming soon.</p>
+  <div class="container">
+    <section class="hero">
+      <h1 class="name">龚晓雪</h1>
+      <p class="title">细胞生物学研发 / 体外研究岗 · 细胞功能评价 / 机制研究 / 临床前研究方向</p>
+
+      <div class="contact">
+        <span class="chip">📞 18107095726</span>
+        <span class="chip">✉️ xiaoxuegong@163.com</span>
+      </div>
+
+      <p class="summary">
+        5+年原代细胞 / 干细胞与临床前研究经验，聚焦肺纤维化、细胞功能评价、机制研究及技术转化。
+        具备从靶点挖掘、模型建立到体内外验证及临床样本关联分析的完整研究经历，
+        熟悉多组学分析、SOP与技术文件编写，并有国家级及省级重点项目推进经验。
+      </p>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 class="section-title">工作经历</h2>
+
+          <div class="item">
+            <div class="item-head">
+              <div class="item-title">科研助理 / 核心执行人</div>
+              <div class="item-time">2023.07 – 2025.12</div>
+            </div>
+            <div class="item-sub">杭州医学院公共卫生学院（依托国家重点研发计划 / 省重点项目）</div>
+            <ul>
+              <li>搭建小鼠肺原代成纤维细胞、PBMC / 外周血干细胞分离培养平台，优化后细胞获得率提升 30%，细胞存活率稳定 &gt;95%，构建细胞种子库。</li>
+              <li>构建矽肺 / 肺纤维化小鼠模型并完成组织学验证，模型成功率 90%，支持后续药效与机制研究。</li>
+              <li>制定实验 SOP 与质量管理流程，提升实验稳定性、可重复性和实验记录规范化水平。</li>
+              <li>统筹重点项目进度、数据质量与关键节点，协调医院、生物技术公司及合作平台，指导 3 名研究生开展实验并完成阶段汇报。</li>
+              <li>基于单细胞转录组、空间转录组与膜蛋白组学开展联合分析，筛选疾病相关靶点，并结合公开临床数据库进行人源关联验证。</li>
+              <li>参与专利申请文件撰写、技术方案梳理、创新点提炼、实验依据整理及论文 / 项目材料输出。</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-head">
+              <div class="item-title">蛋白质组学平台培训学习</div>
+              <div class="item-time">2023.06 – 2023.12</div>
+            </div>
+            <div class="item-sub">清华大学蛋白质组学平台</div>
+            <ul>
+              <li>系统掌握膜蛋白提取、富集及质谱检测流程。</li>
+              <li>熟悉 Label-free、TMT 等定量分析方法。</li>
+              <li>积累肺纤维化研究领域蛋白质组数据分析经验，可支持生物标志物挖掘和证据生成。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">代表项目</h2>
+
+          <div class="item">
+            <div class="item-head">
+              <div class="item-title">肺纤维化损伤修复与临床前靶点研究</div>
+            </div>
+            <ul>
+              <li>围绕肺纤维化中的修复性细胞程序展开系统研究，结合谱系示踪、单细胞转录组、空间转录组、膜蛋白组学、细胞移植、共培养验证及公开临床样本数据关联分析。</li>
+              <li>探索外周血来源神经嵴衍生细胞在肺损伤修复中的来源、命运、功能及 BST2 / TGF-β 信号通路相关调控机制。</li>
+              <li>研究结果可支持疾病相关靶点研究与早期转化开发。</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="item-head">
+              <div class="item-title">本科阶段参与国自然面上项目</div>
+            </div>
+            <ul>
+              <li>参与“他莫昔芬缓解 D-氨基半乳糖 / 脂多糖诱导小鼠急性肝损伤机制研究”。</li>
+              <li>负责动物和细胞模型建立及部分实验数据采集与整理，发表 SCI 论文 1 篇。</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">代表论文</h2>
+
+          <div class="paper">• 龚晓雪, 楼建林. 神经嵴细胞的研究进展[J]. 中国细胞生物学学报, 2022, 44(10):1954-1961.</div>
+          <div class="paper">• 龚晓雪, 冯玲芳, 李泳欣等. 非暴露式气管灌注法建立小鼠矽肺纤维化模型[J]. 中国职业医学, 2023, 50(01):17-22.</div>
+          <div class="paper">• 陈天成, 龚晓雪, 赖露侨, 等. Sox10蛋白表达与博来霉素诱导的肺纤维化之间的关系研究[J]. 工业卫生与职业病, 2025, 51(03):205-209.</div>
+          <div class="paper">• 赖露侨, 姚佳慧, 龚晓雪, 等. 基于小鼠血浆细胞因子和外泌体蛋白的矽肺生物标志物研究[J]. 工业卫生与职业病, 2025, 51(03):210-215.</div>
+          <div class="paper">• 董小雯, 李泳欣, 龚晓雪, 等. mT/mG;Wnt1-Cre小鼠肺组织神经嵴细胞的分离培养与特征鉴定[J]. 基础医学与临床, 2024, 44(11):1510-1515.</div>
+          <div class="paper">• Gong X, Zheng X, Shen J, Yan M, Feng Q, Ding C, Xie S, Xu H. Identification of Serum Inflammatory Markers in House Dust Mite-Induced Allergic Rhinitis Using the Olink Proteomics. Int Forum Allergy Rhinol. 2025 Aug;15(8):861-864.</div>
+          <div class="paper">• Qian Q, Pan S, Li X, Gong X, Jiang Z, Zhang X, Lou J, Feng L. Silica-induced telomere dysfunction promotes pulmonary fibrosis through the activation of the cGAS-STING pathway. Toxicology. 2026 Jun;523:154451.</div>
+          <div class="paper">• Gong X, Cao P, Liu L, et al. Tamoxifen prevents D-galactosamine/lipopolysaccharide-induced murine acute hepatic failure through inhibition of oxidative stress and Mmd-2 upregulation. Immunological Investigations, 2018, 47(6):547-557.</div>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card">
+          <h2 class="section-title">教育经历</h2>
+
+          <div class="item">
+            <div class="item-head">
+              <div class="item-title">浙江省医学科学院</div>
+              <div class="item-time">2020.10 – 2023.06</div>
+            </div>
+            <div class="item-sub">公共卫生与预防医学 · 硕士</div>
+          </div>
+
+          <div class="item">
+            <div class="item-head">
+              <div class="item-title">井冈山大学</div>
+              <div class="item-time">2015.09 – 2020.06</div>
+            </div>
+            <div class="item-sub">预防医学 · 本科</div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">专业技能</h2>
+          <div class="tag-list">
+            <span class="tag">原代细胞分离培养</span>
+            <span class="tag">干细胞研究</span>
+            <span class="tag">IHC</span>
+            <span class="tag">Flow Cytometry</span>
+            <span class="tag">ELISA</span>
+            <span class="tag">Co-IP</span>
+            <span class="tag">qPCR</span>
+            <span class="tag">Western Blot</span>
+            <span class="tag">CCK8</span>
+            <span class="tag">Confocal Microscopy</span>
+            <span class="tag">肺纤维化模型</span>
+            <span class="tag">转基因小鼠繁育</span>
+            <span class="tag">单细胞转录组</span>
+            <span class="tag">空间转录组</span>
+            <span class="tag">蛋白质组学</span>
+            <span class="tag">R</span>
+            <span class="tag">Python基础</span>
+            <span class="tag">SPSS</span>
+            <span class="tag">GraphPad</span>
+            <span class="tag">FlowJo</span>
+            <span class="tag">SOP编写</span>
+            <span class="tag">技术报告</span>
+            <span class="tag">专利材料支持</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">专利与学术报告</h2>
+          <ul>
+            <li>专利 3 项（中国 + 美国），涉及细胞分离、动物模型构建与相关技术转化，已公开 / 实质审查。</li>
+            <li>全国学术会议大会报告 1 次，并获行业吴执中优秀论文三等奖。</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">求职定位</h2>
+          <p class="small">
+            目标岗位：细胞生物学研发 / 体外研究岗（细胞功能评价 / 机制研究 / 临床前研究方向）
+          </p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="footer">
+      © 2026 龚晓雪 · Personal Resume Website
+    </div>
+  </div>
 </body>
 </html>
